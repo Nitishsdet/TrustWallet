@@ -15,6 +15,7 @@ public class BaseTest {
 
         DriverUtils.initializeDriver();
         driver=DriverUtils.getDriver();
+        page = new SamplePage(driver);
 
 
     }
@@ -25,9 +26,5 @@ public class BaseTest {
 
     }
 
-    @BeforeMethod
-    public void testSetup (){
-        page = new SamplePage(driver);
-    }
 
 }
